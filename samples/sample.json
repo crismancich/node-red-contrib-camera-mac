@@ -1,0 +1,62 @@
+[
+    {
+        "id": "b7018321a2895aa7",
+        "type": "image",
+        "z": "258394fbd665098f",
+        "name": "",
+        "width": 160,
+        "data": "payload",
+        "dataType": "msg",
+        "thumbnail": false,
+        "active": true,
+        "pass": false,
+        "outputs": 0,
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "71fca5a6e9fdeb50",
+        "type": "inject",
+        "z": "258394fbd665098f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 140,
+        "wires": [
+            [
+                "bfcc6f2dae4e7d62"
+            ]
+        ]
+    },
+    {
+        "id": "bfcc6f2dae4e7d62",
+        "type": "camera-mac",
+        "z": "258394fbd665098f",
+        "name": "",
+        "outputPath": "/tmp",
+        "fileName": "output.jpg",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "b7018321a2895aa7"
+            ]
+        ]
+    }
+]
