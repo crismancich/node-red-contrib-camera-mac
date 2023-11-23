@@ -15,6 +15,14 @@ Once configured, the `camera-mac` node will capture an image from the built-in c
 
 The captured image will be available as a buffer in the payload of the output message. Additionally, the file path is provided in the `filePath` property of the message for reference.
 
+## Sample Flow
+You can make this json string into a flow by using the node-red flow import function.
+
+- [sample.json](examples/sample.json)
+
+
+![alt](examples/sample.png)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
