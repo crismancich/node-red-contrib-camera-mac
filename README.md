@@ -1,4 +1,4 @@
-^node-red-contrib-camera-mac
+node-red-contrib-camera-mac
 ================
 
 Node-RED node for taking pictures with the built-in mac or macbook camera
